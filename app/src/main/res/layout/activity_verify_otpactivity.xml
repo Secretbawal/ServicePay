@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    tools:context=".VerifyOTPActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="430dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input Verification Code"
+            android:textColor="@color/hint"
+            android:gravity="center"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/dispmobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hint"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/otpnum1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="35sp" />
+            <EditText
+                android:id="@+id/otpnum2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="35sp"/>
+            <EditText
+                android:id="@+id/otpnum3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="35sp"/>
+            <EditText
+                android:id="@+id/otpnum4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="35sp"/>
+            <EditText
+                android:id="@+id/otpnum5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="35sp"/>
+            <EditText
+                android:id="@+id/otpnum6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend OTP?"
+                android:textSize="7pt"/>
+            <TextView
+                android:id="@+id/resendcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Click here"
+                android:textColor="@color/blue"
+                android:textSize="7pt"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/verifybtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:text="Submit"/>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

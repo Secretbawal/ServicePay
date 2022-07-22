@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    tools:context=".PersonalInfoActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/personicon"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/capture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take A Picture"
+        android:textSize="29sp"
+        android:layout_gravity="center"
+        android:textColor="@color/green"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColorHint="@color/hint"
+        android:hint="Input required information"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="343dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/hint"
+        android:textSize="30dp"
+        android:hint="Enter name"/>
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:text="+63"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/phonenum"
+            android:layout_width="343dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter phone"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:textColorHint="@color/hint"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/emailadd"
+        android:layout_width="343dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textColorHint="@color/hint"
+        android:hint="Enter email address"/>
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Upload Valid ID"
+        android:textColor="@color/green"
+        android:textSize="29sp" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/softcorners"
+            android:text="Register"/>
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnopen"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/softcorners"
+        android:text="Open"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5pt">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an Account?"
+        android:textColor="@color/hint"
+        android:textSize="9pt"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here"
+        android:textSize="9pt"
+        android:textColor="@color/green"
+        android:onClick="goback"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue"
+    android:orientation="vertical"
+    tools:context=".MobileOTPActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="730dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/securepaylogo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3pt"
+            android:gravity="center"
+            android:text="Input Phone Number"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3pt"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/rectangle"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="68dp"
+                android:layout_height="48dp"
+                android:text="+63"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <EditText
+                android:id="@+id/mobilenum"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@null"
+                android:hint="Enter mobile"
+                android:textColor="@color/white"
+                android:textColorHint="@color/gray"
+                android:maxLength="10"
+                android:textSize="34sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="6dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:textColor="@color/white"
+                android:text="Create an account?"/>
+            <TextView
+                android:id="@+id/registerlink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/green"
+                android:textSize="8pt"
+                android:onClick="registerlink"
+                android:text="Click here"
+                tools:ignore="UsingOnClickInXml" />
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp">
+            <Button
+                android:id="@+id/btnmobile"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/softcorners"
+                android:text="Submit"
+                android:textColor="@color/white" />
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+</LinearLayout>
